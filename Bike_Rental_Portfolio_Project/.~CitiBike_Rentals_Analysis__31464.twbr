@@ -1,0 +1,1455 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='travel_vs_wind (2)' inline='true' name='federated.0dais3z1lhcpan137ffp60njxvxd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='travel_vs_wind' name='textscan.079vmfv0avoeuf12m2etd1u9yxt8'>
+            <connection class='textscan' directory='/Users/nate/Data_Projects/Bike Rental Portfolio Project/db_views_export' filename='travel_vs_wind.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.079vmfv0avoeuf12m2etd1u9yxt8' name='travel_vs_wind.csv' table='[travel_vs_wind#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='trip_id' ordinal='1' />
+            <column datatype='string' name='trip' ordinal='2' />
+            <column datatype='integer' name='trip_duration' ordinal='3' />
+            <column datatype='string' name='trip_direction' ordinal='4' />
+            <column datatype='integer' name='wdf2' ordinal='5' />
+            <column datatype='real' name='wsf2' ordinal='6' />
+            <column datatype='string' name='wdf2_direction' ordinal='7' />
+            <column datatype='integer' name='wdf5' ordinal='8' />
+            <column datatype='real' name='wsf5' ordinal='9' />
+            <column datatype='string' name='wdf5_direction' ordinal='10' />
+            <column datatype='integer' name='against_wind' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_id]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trip]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_duration]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trip_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_direction</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wdf2]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wsf2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wsf2]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wsf2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf2_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wdf2_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf2_direction</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wdf5]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf5</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wsf5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wsf5]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wsf5</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf5_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wdf5_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf5_direction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>against_wind</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[against_wind]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>against_wind</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='travel_vs_wind.csv' datatype='table' name='[__tableau_internal_object_id__].[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]' role='measure' type='quantitative' />
+      <column caption='Against Wind' datatype='integer' name='[against_wind]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Trip' datatype='string' name='[trip]' role='dimension' type='nominal' />
+      <column caption='Trip Direction' datatype='string' name='[trip_direction]' role='dimension' type='nominal' />
+      <column caption='Trip Duration' datatype='integer' name='[trip_duration]' role='measure' type='quantitative' />
+      <column caption='Trip Id' datatype='integer' name='[trip_id]' role='dimension' type='ordinal' />
+      <column caption='Wdf2' datatype='integer' name='[wdf2]' role='measure' type='quantitative' />
+      <column caption='Wdf2 Direction' datatype='string' name='[wdf2_direction]' role='dimension' type='nominal' />
+      <column caption='Wdf5' datatype='integer' name='[wdf5]' role='measure' type='quantitative' />
+      <column caption='Wdf5 Direction' datatype='string' name='[wdf5_direction]' role='dimension' type='nominal' />
+      <column caption='Wsf2' datatype='real' name='[wsf2]' role='measure' type='quantitative' />
+      <column caption='Wsf5' datatype='real' name='[wsf5]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/3r/gcpzqv091_n9t94q62qr1nk80000gn/T/tableau-temp/#TableauTemp_1h7wyav1crj26c17cbcl71ynsezz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/29/2024 07:21:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1180</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>228407</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip</remote-alias>
+              <ordinal>2</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3409</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5663</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_direction</remote-alias>
+              <ordinal>4</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wdf2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wsf2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wsf2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wsf2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf2_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wdf2_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf2_direction</remote-alias>
+              <ordinal>7</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wdf5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf5</remote-alias>
+              <ordinal>8</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wsf5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wsf5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wsf5</remote-alias>
+              <ordinal>9</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf5_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wdf5_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf5_direction</remote-alias>
+              <ordinal>10</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>against_wind</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[against_wind]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>against_wind</remote-alias>
+              <ordinal>11</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='travel_vs_wind.csv' id='travel_vs_wind.csv_2D1272DF9C304ABF993AC54FFE004308'>
+            <properties context=''>
+              <relation connection='textscan.079vmfv0avoeuf12m2etd1u9yxt8' name='travel_vs_wind.csv' table='[travel_vs_wind#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='trip_id' ordinal='1' />
+                  <column datatype='string' name='trip' ordinal='2' />
+                  <column datatype='integer' name='trip_duration' ordinal='3' />
+                  <column datatype='string' name='trip_direction' ordinal='4' />
+                  <column datatype='integer' name='wdf2' ordinal='5' />
+                  <column datatype='real' name='wsf2' ordinal='6' />
+                  <column datatype='string' name='wdf2_direction' ordinal='7' />
+                  <column datatype='integer' name='wdf5' ordinal='8' />
+                  <column datatype='real' name='wsf5' ordinal='9' />
+                  <column datatype='string' name='wdf5_direction' ordinal='10' />
+                  <column datatype='integer' name='against_wind' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='travel_vs_wind' inline='true' name='federated.0fdju740ou2w1612q1xi40jg4vg1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='travel_vs_wind' name='textscan.0hehm4r1jumrlp1cfkctj1k6xzms'>
+            <connection class='textscan' directory='/Users/nate/Data_Projects/Bike Rental Portfolio Project/db_views_export' filename='travel_vs_wind.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0hehm4r1jumrlp1cfkctj1k6xzms' name='travel_vs_wind.csv' table='[travel_vs_wind#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='trip_id' ordinal='1' />
+            <column datatype='string' name='trip' ordinal='2' />
+            <column datatype='integer' name='trip_duration' ordinal='3' />
+            <column datatype='string' name='trip_direction' ordinal='4' />
+            <column datatype='integer' name='wdf2' ordinal='5' />
+            <column datatype='real' name='wsf2' ordinal='6' />
+            <column datatype='string' name='wdf2_direction' ordinal='7' />
+            <column datatype='integer' name='wdf5' ordinal='8' />
+            <column datatype='real' name='wsf5' ordinal='9' />
+            <column datatype='string' name='wdf5_direction' ordinal='10' />
+            <column datatype='integer' name='against_wind' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_id]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trip]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trip_duration]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trip_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>trip_direction</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wdf2]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wsf2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wsf2]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wsf2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf2_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wdf2_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf2_direction</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wdf5]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf5</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wsf5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wsf5]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wsf5</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdf5_direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wdf5_direction]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>wdf5_direction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>against_wind</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[against_wind]</local-name>
+            <parent-name>[travel_vs_wind.csv]</parent-name>
+            <remote-alias>against_wind</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='travel_vs_wind.csv' datatype='table' name='[__tableau_internal_object_id__].[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]' role='measure' type='quantitative' />
+      <column caption='Against Wind' datatype='integer' name='[against_wind]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Trip' datatype='string' name='[trip]' role='dimension' type='nominal' />
+      <column caption='Trip Direction' datatype='string' name='[trip_direction]' role='dimension' type='nominal' />
+      <column caption='Trip Duration' datatype='integer' name='[trip_duration]' role='measure' type='quantitative' />
+      <column caption='Trip Id' datatype='integer' name='[trip_id]' role='dimension' type='ordinal' />
+      <column caption='Wdf2' datatype='integer' name='[wdf2]' role='measure' type='quantitative' />
+      <column caption='Wdf2 Direction' datatype='string' name='[wdf2_direction]' role='dimension' type='nominal' />
+      <column caption='Wdf5' datatype='integer' name='[wdf5]' role='measure' type='quantitative' />
+      <column caption='Wdf5 Direction' datatype='string' name='[wdf5_direction]' role='dimension' type='nominal' />
+      <column caption='Wsf2' datatype='real' name='[wsf2]' role='measure' type='quantitative' />
+      <column caption='Wsf5' datatype='real' name='[wsf5]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/3r/gcpzqv091_n9t94q62qr1nk80000gn/T/tableau-temp/#TableauTemp_16mml631q0rhsr10dzhm800jhssj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/29/2024 07:23:27 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1177</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>228407</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip</remote-alias>
+              <ordinal>2</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3467</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trip_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5662</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_direction</remote-alias>
+              <ordinal>4</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wdf2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wsf2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wsf2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wsf2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf2_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wdf2_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf2_direction</remote-alias>
+              <ordinal>7</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wdf5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf5</remote-alias>
+              <ordinal>8</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wsf5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wsf5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wsf5</remote-alias>
+              <ordinal>9</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdf5_direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wdf5_direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdf5_direction</remote-alias>
+              <ordinal>10</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>against_wind</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[against_wind]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>against_wind</remote-alias>
+              <ordinal>11</ordinal>
+              <family>travel_vs_wind.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='travel_vs_wind.csv' id='travel_vs_wind.csv_AEA149A275FF4036BD4E8EE4E73B406E'>
+            <properties context=''>
+              <relation connection='textscan.0hehm4r1jumrlp1cfkctj1k6xzms' name='travel_vs_wind.csv' table='[travel_vs_wind#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='trip_id' ordinal='1' />
+                  <column datatype='string' name='trip' ordinal='2' />
+                  <column datatype='integer' name='trip_duration' ordinal='3' />
+                  <column datatype='string' name='trip_direction' ordinal='4' />
+                  <column datatype='integer' name='wdf2' ordinal='5' />
+                  <column datatype='real' name='wsf2' ordinal='6' />
+                  <column datatype='string' name='wdf2_direction' ordinal='7' />
+                  <column datatype='integer' name='wdf5' ordinal='8' />
+                  <column datatype='real' name='wsf5' ordinal='9' />
+                  <column datatype='string' name='wdf5_direction' ordinal='10' />
+                  <column datatype='integer' name='against_wind' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='weather_trips_and_duration' inline='true' name='federated.0c0eggp06yl4h812kji4d16zrule' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='weather_trips_and_duration' name='textscan.0zcjs9s1xd6vk60zszpz70a25107'>
+            <connection class='textscan' directory='/Users/nate/Data_Projects/Bike Rental Portfolio Project' filename='weather_trips_and_duration.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0zcjs9s1xd6vk60zszpz70a25107' name='weather_trips_and_duration.csv' table='[weather_trips_and_duration#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='avg_clear_trips' ordinal='0' />
+            <column datatype='real' name='avg_clear_duration' ordinal='1' />
+            <column datatype='real' name='avg_rain_trips' ordinal='2' />
+            <column datatype='real' name='avg_rain_duration' ordinal='3' />
+            <column datatype='real' name='avg_snow_trips' ordinal='4' />
+            <column datatype='real' name='avg_snow_duration' ordinal='5' />
+            <column datatype='real' name='avg_windy_trips' ordinal='6' />
+            <column datatype='real' name='avg_windy_duration' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_clear_trips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_clear_trips]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_clear_trips</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_clear_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_clear_duration]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_clear_duration</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rain_trips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rain_trips]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_rain_trips</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rain_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rain_duration]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_rain_duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_snow_trips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_snow_trips]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_snow_trips</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_snow_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_snow_duration]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_snow_duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_windy_trips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_windy_trips]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_windy_trips</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_windy_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_windy_duration]</local-name>
+            <parent-name>[weather_trips_and_duration.csv]</parent-name>
+            <remote-alias>avg_windy_duration</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='weather_trips_and_duration.csv' datatype='table' name='[__tableau_internal_object_id__].[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]' role='measure' type='quantitative' />
+      <column caption='Avg Clear Duration' datatype='real' name='[avg_clear_duration]' role='measure' type='quantitative' />
+      <column caption='Avg Clear Trips' datatype='real' name='[avg_clear_trips]' role='measure' type='quantitative' />
+      <column caption='Avg Rain Duration' datatype='real' name='[avg_rain_duration]' role='measure' type='quantitative' />
+      <column caption='Avg Rain Trips' datatype='real' name='[avg_rain_trips]' role='measure' type='quantitative' />
+      <column caption='Avg Snow Duration' datatype='real' name='[avg_snow_duration]' role='measure' type='quantitative' />
+      <column caption='Avg Snow Trips' datatype='real' name='[avg_snow_trips]' role='measure' type='quantitative' />
+      <column caption='Avg Windy Duration' datatype='real' name='[avg_windy_duration]' role='measure' type='quantitative' />
+      <column caption='Avg Windy Trips' datatype='real' name='[avg_windy_trips]' role='measure' type='quantitative' />
+      <column-instance column='[avg_clear_duration]' derivation='Attribute' name='[attr:avg_clear_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_clear_trips]' derivation='Attribute' name='[attr:avg_clear_trips:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_rain_duration]' derivation='Attribute' name='[attr:avg_rain_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_rain_trips]' derivation='Attribute' name='[attr:avg_rain_trips:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_snow_duration]' derivation='Attribute' name='[attr:avg_snow_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_snow_trips]' derivation='Attribute' name='[attr:avg_snow_trips:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_windy_duration]' derivation='Attribute' name='[attr:avg_windy_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_windy_trips]' derivation='Attribute' name='[attr:avg_windy_trips:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/3r/gcpzqv091_n9t94q62qr1nk80000gn/T/tableau-temp/#TableauTemp_026gdc60xqvz9f15jye2v0mwmyow.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/29/2024 07:23:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>avg_clear_trips</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_clear_trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_clear_trips</remote-alias>
+              <ordinal>0</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_clear_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_clear_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_clear_duration</remote-alias>
+              <ordinal>1</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_rain_trips</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_rain_trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_rain_trips</remote-alias>
+              <ordinal>2</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_rain_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_rain_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_rain_duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_snow_trips</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_snow_trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_snow_trips</remote-alias>
+              <ordinal>4</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_snow_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_snow_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_snow_duration</remote-alias>
+              <ordinal>5</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_windy_trips</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_windy_trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_windy_trips</remote-alias>
+              <ordinal>6</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_windy_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_windy_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_windy_duration</remote-alias>
+              <ordinal>7</ordinal>
+              <family>weather_trips_and_duration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_duration:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_trips:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_duration:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_trips:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_duration:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_trips:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_duration:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_trips:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='weather_trips_and_duration.csv' id='weather_trips_and_duration.csv_39B61E31EF3D4E69AD78AA0C37C4FE64'>
+            <properties context=''>
+              <relation connection='textscan.0zcjs9s1xd6vk60zszpz70a25107' name='weather_trips_and_duration.csv' table='[weather_trips_and_duration#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='avg_clear_trips' ordinal='0' />
+                  <column datatype='real' name='avg_clear_duration' ordinal='1' />
+                  <column datatype='real' name='avg_rain_trips' ordinal='2' />
+                  <column datatype='real' name='avg_rain_duration' ordinal='3' />
+                  <column datatype='real' name='avg_snow_trips' ordinal='4' />
+                  <column datatype='real' name='avg_snow_duration' ordinal='5' />
+                  <column datatype='real' name='avg_windy_trips' ordinal='6' />
+                  <column datatype='real' name='avg_windy_duration' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Popular Trips'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Trips Made by CitiBike Customers 2016</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='travel_vs_wind' name='federated.0fdju740ou2w1612q1xi40jg4vg1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fdju740ou2w1612q1xi40jg4vg1'>
+            <column-instance column='[trip_id]' derivation='CountD' name='[ctd:trip_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trip]' derivation='None' name='[none:trip:nk]' pivot='key' type='nominal' />
+            <column caption='Trip' datatype='string' name='[trip]' role='dimension' type='nominal' />
+            <column caption='Trip Id' datatype='integer' name='[trip_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fdju740ou2w1612q1xi40jg4vg1].[none:trip:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([trip_id])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:trip:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0fdju740ou2w1612q1xi40jg4vg1].[none:trip:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0fdju740ou2w1612q1xi40jg4vg1].[none:trip:nk]' value='228' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fdju740ou2w1612q1xi40jg4vg1].[none:trip:nk]</rows>
+        <cols>[federated.0fdju740ou2w1612q1xi40jg4vg1].[ctd:trip_id:qk]</cols>
+      </table>
+      <simple-id id='{7DF3C4B1-C39D-4295-B595-A3E208836E49}' />
+    </worksheet>
+    <worksheet name='Ride Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Riding Against the Wind Did Not Affect Ride Duration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='travel_vs_wind' name='federated.0fdju740ou2w1612q1xi40jg4vg1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fdju740ou2w1612q1xi40jg4vg1'>
+            <column caption='Against Wind' datatype='integer' name='[against_wind]' role='measure' type='quantitative' />
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[against_wind]' derivation='None' name='[none:against_wind:qk]' pivot='key' type='quantitative' />
+            <column caption='Trip Duration' datatype='integer' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.5' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fdju740ou2w1612q1xi40jg4vg1].[avg:trip_duration:qk]</rows>
+        <cols>[federated.0fdju740ou2w1612q1xi40jg4vg1].[none:against_wind:qk]</cols>
+      </table>
+      <simple-id id='{FD6443FF-9DF2-4E08-98C1-DCAB1EBBE2D9}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather_trips_and_duration' name='federated.0c0eggp06yl4h812kji4d16zrule' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c0eggp06yl4h812kji4d16zrule'>
+            <column-instance column='[avg_clear_duration]' derivation='Attribute' name='[attr:avg_clear_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_clear_trips]' derivation='Attribute' name='[attr:avg_clear_trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_rain_duration]' derivation='Attribute' name='[attr:avg_rain_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_rain_trips]' derivation='Attribute' name='[attr:avg_rain_trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_snow_duration]' derivation='Attribute' name='[attr:avg_snow_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_snow_trips]' derivation='Attribute' name='[attr:avg_snow_trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_windy_duration]' derivation='Attribute' name='[attr:avg_windy_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_windy_trips]' derivation='Attribute' name='[attr:avg_windy_trips:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Clear Duration' datatype='real' name='[avg_clear_duration]' role='measure' type='quantitative' />
+            <column caption='Avg Clear Trips' datatype='real' name='[avg_clear_trips]' role='measure' type='quantitative' />
+            <column caption='Avg Rain Duration' datatype='real' name='[avg_rain_duration]' role='measure' type='quantitative' />
+            <column caption='Avg Rain Trips' datatype='real' name='[avg_rain_trips]' role='measure' type='quantitative' />
+            <column caption='Avg Snow Duration' datatype='real' name='[avg_snow_duration]' role='measure' type='quantitative' />
+            <column caption='Avg Snow Trips' datatype='real' name='[avg_snow_trips]' role='measure' type='quantitative' />
+            <column caption='Avg Windy Duration' datatype='real' name='[avg_windy_duration]' role='measure' type='quantitative' />
+            <column caption='Avg Windy Trips' datatype='real' name='[avg_windy_trips]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_trips:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_duration:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_trips:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_duration:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_trips:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_duration:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_trips:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_duration:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_trips:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_clear_duration:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_trips:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_rain_duration:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_trips:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_snow_duration:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_trips:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0c0eggp06yl4h812kji4d16zrule].[attr:avg_windy_duration:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' value='10' />
+            <format attr='font-weight' field='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' value='bold' />
+            <format attr='font-family' field='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' value='Tableau Bold' />
+            <format attr='text-orientation' field='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0c0eggp06yl4h812kji4d16zrule].[Multiple Values]</rows>
+        <cols>[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]</cols>
+      </table>
+      <simple-id id='{D6711736-59B6-4C84-AC24-6B7EFA5B4B54}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='Popular Trips'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id id='{2EC66555-ED2E-467E-B379-A614DB7DD0B7}' />
+    </window>
+    <window class='worksheet' name='Ride Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id id='{AA22110B-5B2C-4C85-9DF9-81E1E6285660}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0c0eggp06yl4h812kji4d16zrule].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id id='{A3D0FB4B-A4E1-4225-AD59-A1506EE3AF1F}' />
+    </window>
+  </windows>
+</workbook>

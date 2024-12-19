@@ -1,0 +1,64 @@
+2024-12-11 14:46:30,798 - INFO - Extracting data...
+2024-12-11 14:46:30,800 - DEBUG - Build database does not exist. Getting all data from dev:
+2024-12-11 14:46:30,825 - DEBUG - dev/cademycode.db connected successfully
+2024-12-11 14:46:30,825 - DEBUG - Closing database connection
+2024-12-11 14:46:30,825 - INFO - cademycode_students: 5000 new rows
+2024-12-11 14:46:30,825 - INFO - cademycode_courses: 10 new rows
+2024-12-11 14:46:30,826 - INFO - cademycode_student_jobs: 13 new rows
+2024-12-11 14:46:30,826 - INFO - Transforming data...
+2024-12-11 14:46:30,843 - INFO - students table updated.
+2024-12-11 14:46:30,851 - INFO - contact_info table created.
+2024-12-11 14:46:30,853 - INFO - Loading data...
+2024-12-11 14:46:30,867 - INFO - students: 5000 rows added
+2024-12-11 14:46:30,875 - INFO - contact_info: 5000 rows added
+2024-12-11 14:46:30,876 - INFO - careers: 10 rows added
+2024-12-11 14:46:30,877 - INFO - jobs: 10 rows added
+2024-12-11 14:46:30,883 - INFO - analytics_csv created:
+2024-12-11 14:46:30,903 - INFO - 5000 rows added to analytics_csv
+2024-12-11 14:46:30,903 - DEBUG - /Users/nate/Data_Projects/Codecademy_Data_Pipeline_Portfolio_Project/build/cademycode_build.db connected successfully
+2024-12-11 14:46:30,903 - DEBUG - Closing database connection
+2024-12-11 14:46:34,421 - INFO - Extracting data...
+2024-12-11 14:46:34,423 - DEBUG - Build database exists. Checking for new data:
+2024-12-11 14:46:34,435 - DEBUG - Extracting existing rows in the build database
+2024-12-11 14:46:34,435 - DEBUG - /Users/nate/Data_Projects/Codecademy_Data_Pipeline_Portfolio_Project/build/cademycode_build.db connected successfully
+2024-12-11 14:46:34,435 - DEBUG - Closing database connection
+2024-12-11 14:46:34,444 - DEBUG - Extracting new data from the dev database
+2024-12-11 14:46:34,444 - DEBUG - dev/cademycode.db connected successfully
+2024-12-11 14:46:34,444 - DEBUG - Closing database connection
+2024-12-11 14:46:34,444 - INFO - cademycode_students: 0 new rows
+2024-12-11 14:46:34,445 - INFO - cademycode_courses: 0 new rows
+2024-12-11 14:46:34,445 - INFO - cademycode_student_jobs: 0 new rows
+2024-12-11 14:46:34,446 - INFO - Transforming data...
+2024-12-11 14:46:34,447 - INFO - Loading data...
+2024-12-11 14:46:34,448 - INFO - students: 0 rows added
+2024-12-11 14:46:34,449 - INFO - contact_info: 0 rows added
+2024-12-11 14:46:34,449 - INFO - careers: 0 rows added
+2024-12-11 14:46:34,450 - INFO - jobs: 0 rows added
+2024-12-11 14:46:34,450 - INFO - No new rows loaded to the analytics csv.
+2024-12-11 14:46:34,451 - DEBUG - /Users/nate/Data_Projects/Codecademy_Data_Pipeline_Portfolio_Project/build/cademycode_build.db connected successfully
+2024-12-11 14:46:34,451 - DEBUG - Closing database connection
+2024-12-11 14:46:37,018 - DEBUG - dev/cademycode.db connected successfully
+2024-12-11 14:46:37,018 - DEBUG - Closing database connection
+2024-12-11 14:46:39,539 - INFO - Extracting data...
+2024-12-11 14:46:39,540 - DEBUG - Build database exists. Checking for new data:
+2024-12-11 14:46:39,552 - DEBUG - Extracting existing rows in the build database
+2024-12-11 14:46:39,552 - DEBUG - /Users/nate/Data_Projects/Codecademy_Data_Pipeline_Portfolio_Project/build/cademycode_build.db connected successfully
+2024-12-11 14:46:39,552 - DEBUG - Closing database connection
+2024-12-11 14:46:39,561 - DEBUG - Extracting new data from the dev database
+2024-12-11 14:46:39,561 - DEBUG - dev/cademycode.db connected successfully
+2024-12-11 14:46:39,561 - DEBUG - Closing database connection
+2024-12-11 14:46:39,562 - INFO - cademycode_students: 100 new rows
+2024-12-11 14:46:39,562 - INFO - cademycode_courses: 0 new rows
+2024-12-11 14:46:39,563 - INFO - cademycode_student_jobs: 0 new rows
+2024-12-11 14:46:39,563 - INFO - Transforming data...
+2024-12-11 14:46:39,568 - INFO - students table updated.
+2024-12-11 14:46:39,570 - INFO - contact_info table created.
+2024-12-11 14:46:39,571 - INFO - Loading data...
+2024-12-11 14:46:39,575 - INFO - students: 100 rows added
+2024-12-11 14:46:39,577 - INFO - contact_info: 100 rows added
+2024-12-11 14:46:39,578 - INFO - careers: 0 rows added
+2024-12-11 14:46:39,579 - INFO - jobs: 0 rows added
+2024-12-11 14:46:39,583 - DEBUG - analytics_csv exists:
+2024-12-11 14:46:39,584 - INFO - 100 rows added to analytics_csv
+2024-12-11 14:46:39,584 - DEBUG - /Users/nate/Data_Projects/Codecademy_Data_Pipeline_Portfolio_Project/build/cademycode_build.db connected successfully
+2024-12-11 14:46:39,584 - DEBUG - Closing database connection
